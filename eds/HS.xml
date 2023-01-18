@@ -72,7 +72,7 @@
 
      <ContainerDataType name="MATMsgBuf" shortDescription="Message Action Table buffer">
       <EntryList>
-        <Entry name="Message" type="MsgArray" shortDescription="If entry contains message" />
+        <Entry name="Message" type="CFE_HDR/CommandHeader" shortDescription="If entry contains message" />
       </EntryList>
     </ContainerDataType>
 
