@@ -126,11 +126,11 @@
         </RequiredInterfaceSet>
         <Implementation>
           <VariableSet>
-            <Variable type="BASE_TYPES/uint16" readOnly="true" name="CmdTopicId" initialValue="${CFE_MISSION/DS_CMD_TOPICID}" />
-            <Variable type="BASE_TYPES/uint16" readOnly="true" name="SendHkTopicId" initialValue="${CFE_MISSION/DS_SEND_HK_TOPICID}" />
-            <Variable type="BASE_TYPES/uint16" readOnly="true" name="HkTlmTopicId" initialValue="${CFE_MISSION/DS_HK_TLM_TOPICID}" />
-            <Variable type="BASE_TYPES/uint16" readOnly="true" name="DiagTlmTopicId" initialValue="${CFE_MISSION/DS_DIAG_TLM_TOPICID)}" />
-            <Variable type="BASE_TYPES/uint16" readOnly="true" name="CompTlmTopicId" initialValue="${CFE_MISSION/DS_COMP_TLM_TOPICID}" />
+            <Variable type="BASE_TYPES/uint16" readOnly="true" name="CmdTopicId" initialValue="${CFE_MISSION/HS_CMD_TOPICID}" />
+            <Variable type="BASE_TYPES/uint16" readOnly="true" name="SendHkTopicId" initialValue="${CFE_MISSION/HS_SEND_HK_TOPICID}" />
+            <Variable type="BASE_TYPES/uint16" readOnly="true" name="HkTlmTopicId" initialValue="${CFE_MISSION/HS_HK_TLM_TOPICID}" />
+            <Variable type="BASE_TYPES/uint16" readOnly="true" name="DiagTlmTopicId" initialValue="${CFE_MISSION/HS_DIAG_TLM_TOPICID)}" />
+            <Variable type="BASE_TYPES/uint16" readOnly="true" name="CompTlmTopicId" initialValue="${CFE_MISSION/HS_COMP_TLM_TOPICID}" />
           </VariableSet>
           <!-- Assign fixed numbers to the "TopicId" parameter of each interface -->
           <ParameterMapSet>

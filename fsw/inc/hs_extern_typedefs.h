@@ -71,6 +71,12 @@ typedef struct
     uint32 ResourceType;                  /**< \brief Type of execution counter */
 } HS_XCTEntry_t;
 
+#ifdef CFE_EDS_ENABLED_BUILD
+
+#include <hs_eds_typedefs.h>
+
+#else
+
 /**
  *  \brief Message Action Table buffer
  */
@@ -89,5 +95,7 @@ typedef struct
     uint16         Cooldown;    /**< \brief Minimum rate at which message can be sent */
     HS_MATMsgBuf_t MsgBuf;      /**< \brief Message to be sent */
 } HS_MATEntry_t;
+
+#endif
 
 #endif /* HS_EXTERN_TYPEDEFS_H */

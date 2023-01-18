@@ -16,9 +16,9 @@ target_include_directories(hs PUBLIC fsw/inc)
 
 set(APP_TABLE_FILES
   fsw/tables/hs_mat.c
-  fsw/tables/hs_xct.c
-  fsw/tables/hs_amt.c
-  fsw/tables/hs_emt.c
+  #fsw/tables/hs_xct.c
+  #fsw/tables/hs_amt.c
+  #fsw/tables/hs_emt.c
 )
 
 add_cfe_tables(hs ${APP_TABLE_FILES})
