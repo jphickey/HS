@@ -30,7 +30,7 @@
 #include "hs_tbldefs.h"
 #include "cfe_tbl_filedef.h"
 
-static CFE_TBL_FileDef_t CFE_TBL_FileDef
+CFE_TBL_FileDef_t CFE_TBL_FileDef
     __attribute__((__used__)) = {"HS_Default_AppMon_Tbl", HS_APP_NAME ".AppMon_Tbl", "HS AppMon Table", "hs_amt.tbl",
                                  (sizeof(HS_AMTEntry_t) * HS_MAX_MONITORED_APPS)};
 

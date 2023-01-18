@@ -30,7 +30,7 @@
 #include "hs_tbldefs.h"
 #include "cfe_tbl_filedef.h"
 
-static CFE_TBL_FileDef_t CFE_TBL_FileDef
+CFE_TBL_FileDef_t CFE_TBL_FileDef
     __attribute__((__used__)) = {"HS_Default_MsgActs_Tbl", HS_APP_NAME ".MsgActs_Tbl", "HS MsgActs Table", "hs_mat.tbl",
                                  (sizeof(HS_MATEntry_t) * HS_MAX_MSG_ACT_TYPES)};
 

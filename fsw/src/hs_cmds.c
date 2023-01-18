@@ -287,8 +287,8 @@ void HS_HousekeepingReq(const CFE_SB_Buffer_t *BufPtr)
         /*
         ** Timestamp and send housekeeping packet
         */
-        CFE_SB_TimeStampMsg(&HS_AppData.HkPacket.TlmHeader.Msg);
-        CFE_SB_TransmitMsg(&HS_AppData.HkPacket.TlmHeader.Msg, true);
+        CFE_SB_TimeStampMsg(CFE_MSG_PTR(HS_AppData.HkPacket));
+        CFE_SB_TransmitMsg(CFE_MSG_PTR(HS_AppData.HkPacket), true);
 
     } /* end HS_VerifyMsgLength if */
 }
